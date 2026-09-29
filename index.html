@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Explore the original Diablo II guild hall emblems. Choose a palette color to illuminate every emblem.">
+  <title>Diablo II · Guild Hall</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='28' height='28' fill='%23121212' stroke='%23978760' stroke-width='2'/%3E%3Cpath d='M11 8v16M21 8v16M8 8h6M18 8h6M8 24h6M18 24h6' stroke='%23b9a473' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><p>DIABLO II</p><h1>Guild Hall</h1></header>
+    <figure>
+      <div class="panel">
+        <img id="original" src="guild-hall.png" width="640" height="426" alt="Original Diablo II guild hall panel: 32 stone-framed heraldic emblems, with two rows of color swatches below.">
+        <canvas id="emblems" width="640" height="426" aria-hidden="true"></canvas>
+        <div id="palette" role="group" aria-label="Emblem colors"></div>
+      </div>
+      <figcaption><span id="selection" role="status" aria-live="polite">Choose a color below the emblems</span><button id="reset" type="button" disabled>Restore original</button></figcaption>
+    </figure>
+  </main>
+</body>
+</html>
